@@ -60,11 +60,11 @@ public class VentanaPrincipal extends JFrame {
         add(pie, BorderLayout.SOUTH);
     }
 
-    // se llama despues de registrar, modificar o asignar para refrescar todas las pestañas
+    // se llama despues de registrar, modificar o asignar para refrescar las tablas y los combos
+    // el reporte no se toca, se actualiza recien cuando se aprieta el boton generar reporte
     public void actualizarDatos() {
         panelDocentes.actualizarTabla();
         panelCursos.actualizarTabla();
         panelAsignaciones.actualizarDatos();
-        panelReportes.generarReporte();
     }
 }
